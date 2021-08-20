@@ -1,0 +1,10 @@
+Based on my observation and reseach since I'm not really familiar with using costructor I find the following line inside the constructor 
+
+   $this->eventManager->dispatch(
+            'product_data_load',
+            $productSku
+        );
+
+as an error/mistake. Typically constructor is used to initialized the properties of an object and then when you the user create an instance of the class, it will automatically calls the constructor method. The code above is an example of dispatching events.
+
+
